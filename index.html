@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07111f">
+<title>FIDE Study Hub</title>
+<style>
+:root{--bg:#07111f;--panel:#101d31;--panel2:#172842;--text:#f7f9ff;--muted:#a9b8cf;--line:#29405f;--purple:#8a63ff;--green:#2dd4bf;--gold:#f5c451;--shadow:0 18px 60px rgba(0,0,0,.30)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{background:var(--bg);min-height:100%;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at 12% 8%,rgba(138,99,255,.24),transparent 35%),radial-gradient(circle at 88% 16%,rgba(45,212,191,.15),transparent 32%),var(--bg);color:var(--text);min-height:100vh;min-height:100dvh}
+a{color:inherit}.wrap{max-width:1100px;margin:0 auto;padding:calc(34px + env(safe-area-inset-top)) 18px calc(64px + env(safe-area-inset-bottom))}
+.brand{display:flex;gap:13px;align-items:center;margin-bottom:34px}.logo{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,var(--purple),#aa8cff);font-weight:900;box-shadow:0 12px 34px rgba(138,99,255,.32)}.brand h1{margin:0;font-size:1.25rem}.brand p{margin:3px 0 0;color:var(--muted);font-size:.86rem}
+.hero{padding:32px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(135deg,rgba(138,99,255,.20),rgba(45,212,191,.08));box-shadow:var(--shadow)}.eyebrow{font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:850}.hero h2{font-size:clamp(2.15rem,6vw,4.4rem);letter-spacing:-.055em;line-height:.98;margin:10px 0 16px;max-width:850px}.hero p{color:var(--muted);font-size:clamp(1rem,2.2vw,1.16rem);line-height:1.65;max-width:820px;margin:0}.chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid var(--line);background:rgba(7,17,31,.55);border-radius:999px;padding:8px 11px;color:#d7e1ef;font-size:.82rem;font-weight:700}
+.sectionHead{display:flex;justify-content:space-between;align-items:end;gap:14px;margin:34px 3px 14px;flex-wrap:wrap}.sectionHead h3{margin:0;font-size:1.25rem}.sectionHead span{color:var(--muted);font-size:.88rem}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.card{position:relative;display:flex;flex-direction:column;min-height:285px;text-decoration:none;border:1px solid var(--line);border-radius:23px;background:rgba(16,29,49,.94);padding:21px;box-shadow:0 14px 38px rgba(0,0,0,.20);transition:transform .18s,border-color .18s,box-shadow .18s}.card:hover{transform:translateY(-3px);border-color:#4b6a91;box-shadow:0 18px 45px rgba(0,0,0,.28)}.icon{width:50px;height:50px;border-radius:15px;display:grid;place-items:center;font-size:1.55rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.05)}.card h4{font-size:1.28rem;margin:18px 0 8px}.card p{color:var(--muted);line-height:1.55;margin:0}.meta{margin-top:14px;color:#ced9e8;font-size:.83rem}.go{margin-top:auto;padding-top:20px;font-weight:850;display:flex;align-items:center;gap:8px}.vocab .go{color:#a9b8ff}.grammar .go{color:#8cf0d6}.tasks .go{color:#ffd984}.card:before{content:"";position:absolute;inset:0 auto auto 0;width:100%;height:3px;border-radius:23px 23px 0 0}.vocab:before{background:linear-gradient(90deg,#3659d9,#7857d8)}.grammar:before{background:linear-gradient(90deg,#8a63ff,#2dd4bf)}.tasks:before{background:linear-gradient(90deg,#f5c451,#8a63ff)}
+.note{margin-top:24px;border:1px solid var(--line);border-radius:18px;padding:16px 18px;color:var(--muted);background:rgba(255,255,255,.035);line-height:1.55}.note strong{color:var(--text)}.footer{text-align:center;color:#71839b;font-size:.8rem;margin-top:28px}
+@media(max-width:850px){.grid{grid-template-columns:1fr}.card{min-height:220px}.hero{padding:24px}}@media(max-width:520px){.wrap{padding-left:12px;padding-right:12px}.hero{padding:21px}.brand{margin-bottom:22px}.hero h2{font-size:2.45rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand"><div class="logo">DE</div><div><h1>FIDE Study Hub</h1><p>Personal German practice · A2–B1 / B1 focus</p></div></div>
+  <section class="hero">
+    <div class="eyebrow">Evening practice dashboard</div>
+    <h2>Vocabulary. Grammar. Real FIDE tasks.</h2>
+    <p>One place for the three kinds of repetition you wanted: learn the words in context, make your recurring grammar choices automatic, and practise B1-style picture descriptions, writing, phone calls, opinions and personal experiences.</p>
+    <div class="chips"><span class="chip">Works offline after loading</span><span class="chip">Progress saved in this browser</span><span class="chip">No login</span><span class="chip">GitHub Pages ready</span></div>
+  </section>
+
+  <div class="sectionHead"><h3>Choose a chapter</h3><span>Your scores stay inside each chapter</span></div>
+  <div class="grid">
+    <a class="card vocab" href="vocabulary.html">
+      <div class="icon">🧠</div><h4>Vocabulary</h4>
+      <p>Practise your difficult FIDE vocabulary twice in context, then finish with short comprehension checks. Includes English and Romanian support.</p>
+      <div class="meta">13 sections · context selection · cloze · comprehension</div>
+      <div class="go">Open vocabulary →</div>
+    </a>
+    <a class="card grammar" href="grammar.html">
+      <div class="icon">🎯</div><h4>Grammar Reflex</h4>
+      <p>Focus on the mistakes that actually appear in your speaking: adjective endings, Dativ vs. Akkusativ, everyday prepositions and verb-preposition combinations.</p>
+      <div class="meta">Focused tests · verb sorter · mixed challenge</div>
+      <div class="go">Open grammar →</div>
+    </a>
+    <a class="card tasks" href="fide-tasks.html">
+      <div class="icon">🗣️</div><h4>FIDE B1 Tasks</h4>
+      <p>Build coherent B1 answers by choosing the right words and connectors, then putting larger text blocks into a clear logical order.</p>
+      <div class="meta">25 exercises · 5 task types · picture tasks included</div>
+      <div class="go">Open FIDE tasks →</div>
+    </a>
+  </div>
+
+  <div class="note"><strong>Tip:</strong> GitHub Pages serves this as a static site, so all three chapters work without a server or database. Your learning progress uses local browser storage, which means it stays on the device/browser where you study.</div>
+  <div class="footer">Made for personal FIDE preparation · static GitHub Pages site</div>
+</div>
+</body>
+</html>
